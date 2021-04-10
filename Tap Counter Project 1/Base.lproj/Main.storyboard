@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Tap_Counter_Project_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hMd-41-3TH">
+                                <rect key="frame" x="185.5" y="414" width="43" height="78"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="65"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f0c-Oz-Qai">
+                                <rect key="frame" x="186" y="516" width="42" height="42"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <state key="normal" title="Tap"/>
+                                <connections>
+                                    <action selector="tapButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cBo-rf-Fk4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XLv-rI-ejG">
+                                <rect key="frame" x="160" y="618" width="94" height="54"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="resetButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aEr-2X-nQh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hMd-41-3TH" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="AFI-nO-S6a"/>
+                            <constraint firstItem="f0c-Oz-Qai" firstAttribute="centerX" secondItem="hMd-41-3TH" secondAttribute="centerX" id="Xkw-MP-5Ab"/>
+                            <constraint firstItem="f0c-Oz-Qai" firstAttribute="top" secondItem="hMd-41-3TH" secondAttribute="bottom" constant="24" id="YIS-9B-VgX"/>
+                            <constraint firstItem="XLv-rI-ejG" firstAttribute="centerX" secondItem="f0c-Oz-Qai" secondAttribute="centerX" id="i5C-sK-hhe"/>
+                            <constraint firstItem="XLv-rI-ejG" firstAttribute="top" secondItem="f0c-Oz-Qai" secondAttribute="bottom" constant="60" id="lzl-cY-xlc"/>
+                            <constraint firstItem="hMd-41-3TH" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="mJc-m8-QO5"/>
+                            <constraint firstItem="XLv-rI-ejG" firstAttribute="centerX" secondItem="hMd-41-3TH" secondAttribute="centerX" id="oNZ-5a-0oX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="levelOutlet" destination="hMd-41-3TH" id="MgE-RQ-YQv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="91.741071428571431"/>
+        </scene>
+    </scenes>
+</document>
